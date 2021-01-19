@@ -4,6 +4,7 @@ namespace ZabbixComponent\LaravelZabbixComponent;
 
 use Illuminate\Support\ServiceProvider;
 use ZabbixComponent\ZabbixGraph;
+use ZabbixComponent\ZabbixTopTrigger;
 
 class ZabbixComponentServiceProvider extends ServiceProvider
 {
@@ -22,6 +23,15 @@ class ZabbixComponentServiceProvider extends ServiceProvider
 
         $this->app->bind(ZabbixGraph::class, function () {
             return new ZabbixGraph(
+                $this->app['config']['zabbixcomponent.host'],
+                $this->app['config']['zabbixcomponent.username'],
+                $this->app['config']['zabbixcomponent.password'],
+                $this->app['config']['zabbixcomponent.old_version'],
+            );
+        });
+
+        $this->app->bind(ZabbixTopTrigger::class, function () {
+            return new ZabbixTopTrigger(
                 $this->app['config']['zabbixcomponent.host'],
                 $this->app['config']['zabbixcomponent.username'],
                 $this->app['config']['zabbixcomponent.password'],
