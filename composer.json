@@ -1,0 +1,21 @@
+{
+    "name": "davigs/laravel-zabbix-component",
+    "description": "Laravel Provider para utilizar recursos do Zabbix",
+    "require": {
+        "php": "^7.3",
+        "davigs/zabbix-component": "^1.0.0",
+        "illuminate/support": "^8.23"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Davi Gomes",
+            "email": "davigomess@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "ZabbixComponent\\LaravelZabbixComponent\\": "src"
+        }
+    }
+}
