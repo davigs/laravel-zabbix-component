@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "davigs/zabbix-component",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/davigs/zabbix-component.git",
-                "reference": "bcfea96f9331f75e377a7bbcac87c658297a040b"
+                "reference": "99a7764744d219a9c11f59f0731b217bfeaed6e3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/davigs/zabbix-component/zipball/bcfea96f9331f75e377a7bbcac87c658297a040b",
-                "reference": "bcfea96f9331f75e377a7bbcac87c658297a040b",
+                "url": "https://api.github.com/repos/davigs/zabbix-component/zipball/99a7764744d219a9c11f59f0731b217bfeaed6e3",
+                "reference": "99a7764744d219a9c11f59f0731b217bfeaed6e3",
                 "shasum": ""
             },
             "require": {
@@ -43,9 +43,9 @@
             "description": "Componente para download de informações de instâncias Zabbix",
             "support": {
                 "issues": "https://github.com/davigs/zabbix-component/issues",
-                "source": "https://github.com/davigs/zabbix-component/tree/1.0.2"
+                "source": "https://github.com/davigs/zabbix-component/tree/1.0.3"
             },
-            "time": "2021-01-20T09:10:06+00:00"
+            "time": "2021-01-21T07:59:56+00:00"
         },
         {
             "name": "doctrine/inflector",
